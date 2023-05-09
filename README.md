@@ -1,13 +1,10 @@
 # Nyc Cab Analysis
- 
-
- 
 
 Introduction
 The goal of this project is to perform data analytics on Nyc cab data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
 
 Architecture
-
+<img src="architecture.jpg" alt="Alt text" title="Optional title">
 
 Technology Used
 Programming Language - Python
@@ -31,3 +28,4 @@ More info about dataset can be found here:
 Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 Data Model
+<img src="data model_page-0001.jpg" alt="Alt text" title="Optional title">
