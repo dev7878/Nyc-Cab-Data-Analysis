@@ -1,32 +1,50 @@
-# Nyc Cab Analysis
+# NYC Taxi Data Analysis Project
 
-This project aims to perform data analytics on NYC cab data using various tools and technologies, including Google Cloud Platform (GCP) Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
+## Overview
 
-<h2> Architecture</h2>
-Here is the high-level architecture of the project: 
-<p> </p>
-<img src="architecture.jpg" alt="Alt text" title="Optional title">
+This project focuses on analyzing a sample of NYC taxi ride data to uncover insights, trends, and patterns. We aim to clean and preprocess the data, engineer meaningful features, and conduct exploratory data analysis (EDA) to answer key questions about taxi usage in New York City.
 
-<h2>Technology Used</h2>
-The following technologies were used in this project: 
+### Objectives
 
-- Programming Language - Python
-- Google Cloud Platform
-- Google Storage
-- Compute Instance
-- BigQuery
-- Looker Studio
-- Modern Data Pipeine Tool - https://www.mage.ai/
-<h2>Contributing</h2>
-You are welcome to contribute to this open-source project on GitHub: https://github.com/mage-ai/mage-ai
-<h2> Dataset Used</h2>
-The TLC Trip Record Data Yellow and Green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. The dataset used in this project is available at -  https://github.com/dev7878/Nyc-Cab-Analysis/blob/main/data/nyc_taxi_sample_data.csv
+- Identify peak hours for taxi rides.
+- Understand fare dynamics based on distance and duration.
+- Analyze tipping behavior.
+- Explore patterns across different days of the week.
 
-More info about dataset can be found here:
+## Architecture
 
-Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
-<h2> Data Model </h2>
-Here is the data model used in this project:
-<p> </p>
-<img src="data model_page-0001.jpg" alt="Alt text" title="Optional title">
+The architecture of the project is visualized below, showing how raw data from Google Cloud Storage is processed using Mage, and the resulting analytics are stored in BigQuery and visualized using Looker.
+
+![Architecture](architecture.jpg)
+
+## Data Model
+
+The following data model diagram illustrates how the data is structured within the project, with fact tables and dimension tables supporting the analysis:
+
+![Data Model](data model_page-0001.jpg)
+
+## Data Processing
+
+1. **Data Loading and Initial Exploration**
+
+   - Load the dataset.
+   - Perform an initial inspection of the data.
+
+2. **Data Cleaning and Preprocessing**
+
+   - Handle missing values, duplicates, and incorrect data types.
+   - Convert datetime fields.
+   - Create unique identifiers for each trip.
+
+3. **Feature Engineering**
+
+   - Extract additional features from datetime columns.
+   - Create dimension tables for further analysis.
+
+4. **Exploratory Data Analysis (EDA)**
+   - Analyze the distribution of various features.
+   - Identify trends and patterns.
+
+## Conclusion
+
+The project successfully uncovers key insights about NYC taxi rides, such as peak hours, fare dynamics, tipping behavior, and weekly patterns. These insights can inform decisions related to urban transportation planning, pricing strategies, and customer behavior analysis.
