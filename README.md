@@ -21,7 +21,7 @@ The architecture of the project is visualized below, showing how raw data from G
 
 The following data model diagram illustrates how the data is structured within the project, with fact tables and dimension tables supporting the analysis:
 
-![Data Model](data model_page-0001.jpg)
+![Data Model](data_model_page-0001.jpg)
 
 ## Data Processing
 
